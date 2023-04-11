@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forms</title>
-</head>
-<body>
-  <form action="#" method=post>
-  <label>
-    <span>Повне ім'я</span> 
-    <input type="text" name="skills[]" value=""> 
-</label><br>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <label>
+        <span>Повне ім'я</span>
+        <input type="text" name="fullname" value="" /> </label
+      ><br />
 
-<label>
-  <span>Email</span> 
-  <input type="email" name="skills{}" value="">
-</label><br>
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" value="" /> </label
+      ><br />
 
-<label>
-  <span>Пароль</span>
-  <input type="password"> 
-</label>
+      <label>
+        <span>Пароль</span>
+        <input type="password" name="password" value="" />
+      </label><br>
 
-  
-  </form>
-</body>
+      <label>
+        <span>Пароль ще раз</span>
+        <input type="password" name="password" value="" />
+      </label><br>
+
+      
+        <span>Стать</span>
+        <input type="radio" name="choose" id="male"> <label for="male">чоловіча </label>
+        <input type="radio" name="choose" id="famile"> <label for="famile">жіноча </label><br>
+
+        <label>
+          <span>Вік</span>
+          <input id="number" name="number" type="number">
+        </label><br>
+
+        <label>
+        <span>Курс</span>
+        <select>
+          <option value="-=Виберіть курс=-">-=Виберіть курс=-</option> 
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
+          <option value="Project Management">Project Management</option>
+          <option value="QA Manual">QA Manual</option>
+        </select>
+      </label><br>
+
+       <label> 
+      <span>Повна адреса</span>
+      <textarea name="texarea" id="text" cols="30" rows="5" placeholder="Країна,регоін,місто/селище,вулиця"></textarea>
+      </label><br>
+
+      <label> <input type="checkbox">Я погоджуюсь з обробкую персональних данних </label><br>
+
+    <button type="reset">Очистити форму</button>
+    <button type="submit">Зареєструватись</button>
+
+    </form>
+  </body>
 </html>
