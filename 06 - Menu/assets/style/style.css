@@ -1,0 +1,124 @@
+body {
+  background: #3B3F45;
+  text-align: center;
+  
+}
+
+.header{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  background:#4A4F56;
+  padding: 19px 0 12px 0;
+  color: #FF8984;
+}
+.paragraf {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 4px 0 0 0;
+}
+.main{
+  padding: 20px 0 0 0;
+  
+}
+.block{
+  display:block;
+  width: 534px;
+  max-height: 45px;
+  background: #88839E;
+  margin: 0 auto;
+  text-align: left;
+  padding: 11px 0 13px 12px;
+  
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
+}
+
+
+
+.block:nth-child(even){
+  background: #7A7593;
+}
+
+
+
+
+.block:hover{
+  background: #625E77;
+  border-top: solid #FFFFFF;
+  border-bottom: solid #FFFFFF;
+  
+  
+}
+.block > .label::after{
+  content: "(for the next lessons about CSS)";
+  color:#FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+.label {
+  color: #FFFFFF;
+}
+.label:nth-child(1)::after{
+ content:"(for more CSS manipulations)";
+}
+.label:nth-child(2)::after{
+  content:"(because they are awesome)";
+ }
+ .label:nth-child(3)::after{
+  content:"(hm... they always dissapear)";
+ }
+ .label:nth-child(4)::after{
+  content:none;
+ }
+ .label:nth-child(5)::after{
+  content:"(for my friends)";
+ }
+ input:checked + .label {
+  text-decoration: line-through;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #9B96AC;
+ }
+ input:checked + .label::after {
+  text-decoration: line-through;
+  color: #9B96AC;
+ }
+
+ .foot{
+  
+  background: #4A4F56;
+  width: 546px;
+  margin: 0 auto;
+  
+ 
+ }
+
+ .secondparagraf{
+  padding: 12px 0 12px 0px;
+  margin: 45px;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FF8984;
+ }
